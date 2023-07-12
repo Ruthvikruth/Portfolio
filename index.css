@@ -1,0 +1,467 @@
+html
+{
+    scroll-behavior: smooth;
+    background-image: url("Background Image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+body
+{
+    font-family: "League Spartan";
+    color: #fff;
+    transition: all 0.2s ease-in;
+    line-height: 30px;
+}
+
+.non-active
+{
+    position: relative;
+    opacity: 0;
+    transition: all 4s ease-in-out;
+}
+
+.active
+{
+    opacity: 1;
+    animation-name: upside;
+    animation-duration: 1.5s;
+}
+
+.subheading
+{
+    animation-name: upside;
+    animation-duration: 5s;
+    font-size: 3vw;
+    font-weight: 600;
+    font-family: "Roboto Slab";
+    transition: all 0.2s ease-in-out;
+    margin-left: 3%;
+}
+
+.about
+{
+    margin: 2vw;
+    font-size: 1.6vw;
+    border-radius: 10px;
+    color: #d5d9e2;
+}
+
+.about span
+{
+    font-size: 3vw;
+}
+
+.about-context
+{
+    display: grid;
+    grid-template-columns: 4fr 2fr;
+    align-items: center;
+    height:500px ;
+}
+
+#about1
+{
+    animation-name: leftside;
+    animation-duration: 2s;
+}
+
+#about2
+{
+    animation-name: rightside;
+    animation-duration: 1.5s;
+}
+
+.about-text
+{
+    margin-left: 5%;
+    width: 80%;
+}
+
+.profilepic
+{
+    width: 70%;
+    border-radius: 100%;
+    text-align: right;
+    margin-left: 2vw;
+    animation-name: rightside;
+    animation-duration: 2s;
+    transition: all 0.2s ease-in-out;
+}
+
+#profilepicDiv
+{
+    width: 450px;
+    height: 320px;
+}
+
+.header-right
+{
+    float: right;
+}
+
+.header-right a
+{
+    color: #ffb400;
+    font-size: 1.6vw;
+    text-decoration: none;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    font-family: "Roboto Slab";
+    transition: all 0.2s ease-in;
+}
+
+.header-right a:hover
+{
+    background-color: #eee;
+    transition: all 0.2s ease-in;
+}
+
+header
+{
+    position:sticky;
+    top:0px;
+    left:0px;
+    right:0px;
+    background: transparent;
+    backdrop-filter:blur(100px);
+    z-index: 10;
+}
+
+.education
+{
+    width: 850px;
+    border-radius: 10px;
+    margin-left: 5%;
+}
+
+.projects
+{
+    margin: 2vw;
+    border-radius: 10px;
+    color: white;
+    text-indent: 1.2vw;
+}
+
+.next-button,#feedback
+{
+    color: #14213d;
+    background-color: white;
+    border-radius: 40px;
+    border-color: #111;
+    font-size: 2vw;
+    text-align: center;
+    width: 4vw;
+    height: 4vw;
+    transition: all 0.2s ease-in;
+    border-width: 2px;
+}
+
+.next-button:hover,#feedback:hover
+{
+    background-color: #14213d;
+    color: white;
+    transition: all 0.2s ease-in;
+}
+
+#project-slide
+{
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 2fr 1fr;
+    column-gap: 5px;
+}
+
+#edu
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.projectsCSS,#resume-download
+{
+    background-color: #14213d;
+    color: white;
+    border-radius: 20px;
+    font-size: 1.2vw;
+    padding: 5px;
+    width: 120px;
+    transition: all 0.2s ease-in;
+}
+
+#resume-download
+{
+    background: white;
+    border: 0px;
+    color: #14213d;
+}
+
+.projectsCSS:hover,.exp-letter:hover
+{
+    color: #14213d;
+    background-color: white;
+    transition: all 0.2s ease-in;
+}
+
+#resume-download:hover
+{
+    background-color: #14213d;
+    color: white;
+    transition: all 0.2s ease-in;
+}
+
+#project-URL,#resume
+{
+    text-decoration: none;
+    color:white;
+}
+
+#project-URL:hover,#resume
+{
+    text-decoration: underline;
+}
+
+footer
+{
+    margin-left:0px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+}
+
+.skills
+{
+    margin: 2vw;
+    border-radius: 10px;
+}
+
+.skills-grid1
+{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr 1fr 1fr;
+    grid-row-gap: 40px;
+    text-align:center;
+}
+
+.soft-skills
+{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    text-align:center;
+}
+
+.work
+{
+    position: relative;
+    top: 70px;
+    margin:2vw;
+    border-radius: 10px;
+    animation-name: upside;
+    animation-duration: 2s;
+}
+
+.work-experience
+{
+    margin: 2vw;
+    height: 700px;
+    display: grid;
+    column-gap: 0px;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 10px;
+    animation-name: popup;
+    animation-duration: 3s;
+}
+
+.card
+{
+    text-indent: 1.6vw;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    background-color: rgb(13, 133, 188);
+    border-radius: 10px;
+    height: 520px;
+}
+
+.card2
+{
+    background-color: orange;
+}
+
+.image-circle
+{
+    height: 200px;
+    width: 200px;
+    border-radius: 100px;;
+    background-color: #181622;
+    text-align: justify;
+    position: relative;
+    top: -100px;
+    left: 210px;
+}
+
+.card img
+{
+    position: relative;
+}
+
+.work-desc
+{
+    font-size: 22px;
+    line-height: 35px;
+    margin: 30px;
+    margin-top: 0px;
+    text-align: left;
+}
+
+.work-title
+{
+    height: 50px;
+    position: relative;
+    top: -60px;
+}
+
+#leftbutton
+{
+    visibility: hidden;
+}
+
+hr
+{
+    width: 90%;
+    color:white;
+}
+
+#logopic
+{
+    transition: all 0.2s ease-in;
+}
+
+.active-skills
+{
+    display: block;
+}
+
+.inactive-skills
+{
+    opacity: 1;
+    display: none;
+}
+
+#tech-underscore, #soft-underscore
+{
+    height: 2px;
+    width: 0px;
+    background: white;
+    transition: all 0.3s ease-in-out;
+}
+
+#tech-underscore
+{
+    width: 135px;
+}
+
+.active-underscore
+{
+    opacity: 1;
+}
+
+.hidden
+{
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.visible
+{
+    opacity: 1;
+}
+
+.education-description, #dropdown1, #dropdown2
+{
+    transition: all 0.2s ease-in-out;
+}
+
+.rotate
+{
+    transform: rotate(180deg);
+}
+
+.hidedescription
+{
+    display: none;
+}
+
+#schooling-edu, #college-edu
+{
+    line-height: 30px;
+}
+
+.skills-subheading
+{
+    cursor: pointer;
+}
+
+.skills-display
+{
+    animation-name: rightside;
+    animation-duration: 1s;
+}
+
+@keyframes leftside
+{
+    from
+    {
+        transform: translate(-150px,0px);
+        opacity: 0;
+    }
+    to
+    {
+        opacity: 1;
+        transform: translate(0,0);
+    }
+}
+
+@keyframes rightside
+{
+    from
+    {
+        transform: translate(150px,0px);
+        opacity: 0;
+    }
+    to
+    {
+        opacity: 1;
+        transform: translate(0,0);
+    }
+}
+
+@keyframes upside
+{
+    from
+    {
+        transform: translateY(-150px);
+        opacity: 0;
+    }
+
+    to
+    {
+        opacity: 1;
+        transform: translate(0,0);
+    }
+}
+
+@keyframes popup
+{
+    from
+    {
+        transform: scale(0.25);
+        opacity: 0;
+    }
+
+    to
+    {
+        transform: scale(1);
+        opacity: 1;
+    }
+}

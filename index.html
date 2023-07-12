@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="icon" type="image" href="https://lh6.googleusercontent.com/XgxpS1UT7zSTabTNGV8DOpBj0IxHeZvcIOwOl0tZG6YczD0E7emFeQES7xfV5-UTrY0=w2400">
+        <link href='https://fonts.googleapis.com/css?family=Roboto Slab' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=League Spartan' rel='stylesheet'>
+        <link rel="stylesheet" href="index.css">
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Ruthvik Portfolio</title>
+
+        <script src="index.js" type="text/javascript">
+        </script>
+    </head>
+
+    <body>
+        <div>
+            <header>
+                <a href="#" id="HeaderLogo"><img id="logopic" style = "width:5.3vw" src="Logo.png"></a>
+                <div class="header-right">
+                    <a href="#about-me">About Me</a>
+                    <a href="#projects-section">Projects</a>
+                    <a href="#skills-section">Skills</a>
+                    <a href="#work-about">Experience</a>
+                    <a href="#foot-href" style="margin-right: 2vw;">Contact Me</a>
+                </div>
+            </header>
+
+            <div class="about non-active" id="about-me">
+                <br>
+                <span class="subheading">About Ruthvik</span>
+
+                <div class="about-context">
+                    <div>
+                        <div class="about-text" id="about1">I am a Chennai-based Web developer.
+                            I am pursuing my Bachelor of Technology in Computer Science and Business Systems
+                            at Rajalakshmi Engineering College, Chennai. I completed my schooling at Velammal Matriculation
+                            Higher Secondary School, Chennai.<br><br>
+                        </div>
+
+                        <div class="about-text" id="about2">
+                            I am a self-determined, adaptable, ambitious person, who loves to explore every field of Technology.
+                            I have a particular interest in Website Development. I do like developing websites with an
+                            amazing UI. I am a good team player and I get along well. At my free time, I like to play Chess, solve Puzzles, have a Chat with friends or play Badminton while listening Music.
+                        </div>
+                    </div>
+
+                    <div id="profilepicDiv" class="image"><img class="profilepic" src="Portfolio Photo.jpg" alt="Unable to Load Image"></div>
+                </div>
+
+                <a target="_blank" id="resume" style="font-size:1.2vw;font-weight:bold;" href="Ruthvik Resume.pdf" download="Ruthvik Resume.pdf"><button style="width:150px; margin-left: 3%; position: relative; top: -40px;" id="resume-download">Download resume</button></a>
+
+                <br><br>
+                <br>
+
+                <span class="subheading">Education</span>
+                <br><br><br>
+
+                <div class="education non-active">
+
+                    <div style="cursor: pointer;" id="schooling" onclick="education_dropdown('schooling-edu')">
+                        Schooling <div id="dropdown1" class="rotate" style="font-size: 40px; width: 5px; height: 5px; position: relative; top: -20px; right: -115px;">^</div>
+                    </div>
+
+                    <div style="margin-left: 5%; background: rgba(203, 230, 203, 0.2); border-radius: 10px; padding-left: 20px;" class="education-description hidedescription" id="schooling-edu">
+                        <br>
+                        School Name: Velammal Matriculation Higher Secondary School, Chennai.
+                        <br>
+                        Year of study: 2005 - 2020
+                        <br>
+                        <br>HSC (2019 - 2020) : 69.33% <br>SSLC (2017 - 2018) : 92.40%<br><br>
+                    </div>
+
+                    <br><br>
+                    <div style="cursor: pointer; position: relative; top: -30px;" id="college" onclick="education_dropdown('college-edu')">
+                        College <div class="rotate" id="dropdown2" style="font-size: 40px; width: 5px; height: 5px; position: relative; top: -20px; right: -90px;">^</div>
+                    </div>
+
+                    <div style="margin-left: 5%; position: relative; top: -30px; background: rgba(203, 230, 203, 0.2); border-radius: 10px; padding-left: 20px;" id="college-edu" class="education-description hidedescription">
+                        <br>College Name : Rajalakshmi Engineering College, Chennai
+                        <br>
+                        Year of Study: 2020 - 2024
+                        <br>
+                        <br>CGPA: 8.34
+                        <br><br>
+                    </div>
+
+                </div>
+                <br>
+            </div>
+
+            <br>
+
+            <section id="skills-section" class="skills non-active" >
+                <br>
+                <div style="color:white;" class="subheading">Skills</div>
+                <br>
+
+                <div id="tech-underscore" class="active-underscore" style="position: relative; top: 40px; left: 75px;"></div>
+                <div id="soft-underscore" style="position: relative; top: 40px; left: 280px;"></div>
+
+                <span id="tech" style="color:white; margin-left:5%; font-size:28px; width: 150px;" class="subheading skills-subheading" onclick="toggle('tech-skills')">Technical</span>
+                <span id="soft" style="color: white; margin-left:5%; font-size:28px; width: 150px;" class="subheading skills-subheading" onclick="toggle('softSkills')">Soft Skills</span>
+
+                <br><br>
+
+                <section id="tech-skills" class="skills-grid1 skills-display">
+                    <span><img width="25%" src="C Language.png"></span>
+                    <span><img width="26.7%" src="Python Logo.png"></span>
+                    <span><img style="position: relative; top: -10px;" width="36%" src="Java Logo.png"></span>
+                    <span><img width="28.5%" src="Cpp Logo.png"></span>
+                    <span><img width="28.5%" style="position: relative; left: -2px;" src="HTML Logo.png"></span>
+
+                    <span><img width="25%" src="CSS Logo.png"></span>
+                    <span><img style="position: relative; top: 15px;" width="32%" src="JavaScript Logo.png"></span>
+                    <span><img style="position: relative; top: -15px;" width="90%" src="MySQL Logo.png"></span>
+                    <span><img style="position: relative; top: -40px; left: -20px;" width="75%" src="GoLang Logo.png"></span>
+                    <span><img style="position: relative; top: 15px;" width="65%" src="Programming Logo.png"></span>
+
+                    <span style="position: relative; top: -290px;">C </span>
+                    <span style="position: relative; top: -290px;">Python</span>
+                    <span style="position: relative; top: -290px;">Java</span>
+                    <span style="position: relative; top: -290px;">C++</span>
+                    <span style="position: relative; top: -290px;">HTML</span>
+
+                    <span style="position: relative; top: -175px;">CSS</span>
+                    <span style="position: relative; top: -175px;">JavaScript</span>
+                    <span style="position: relative; top: -175px;">MySQL</span>
+                    <span style="position: relative; top: -175px;">GoLang</span>
+                    <span style="position: relative; top: -175px;">Programming</span>
+                </section>
+
+                <section id="softSkills" class="soft-skills skills-display inactive-skills">
+                    <span><img width="80%" src="Presentation.png"></span>
+                    <span><img width="80%" src="Communication.png"></span>
+                    <span><img width="80%" src="Adaptable.png"></span>
+                    <span><img width="78%" src="Problem Solving.png"></span>
+
+                    <span style="position: relative; top: -20px;">Presentation</span>
+                    <span style="position: relative; top: -20px;">Communication</span>
+                    <span style="position: relative; top: -20px;">Adaptable</span>
+                    <span style="position: relative; top: -20px;">Problem Solving</span>
+                </section>
+
+            </section>
+
+            <section class="non-active" style="margin:2vw;border-radius:10px;" id="work-about">
+                <div style="color:white;" class="subheading"><center>Work experience</center></div>
+
+                <div class="work-experience">
+                    <div class="work card">
+                        <div class="image-circle"><img style="padding-top: 80px;" width="160px" height="40px" src="AIESEC Logo.png"></div>
+                        <div class="work-title">Junior Manager, AIESEC in Amaravati.<hr></div>
+                        <div class="work-desc">AIESEC is an international youth-run and led, non-governmental and not-for-profit organization that provides young people with leadership development, cross-cultural internships, and global volunteer exchange experiences. The organization focuses on empowering young people to make a progressive social impact. I also worked as a designer for the team, where I was involved in designing posters and videos.</div>
+                    </div>
+
+                    <div class="work card card2">
+                        <div class="image-circle"><img style="padding-top: 80px;padding-right: 30px;" width="160px" src="Coding Ninjas Logo.png"></div>
+                        <div class="work-title">Campus Ambassador, Coding Ninjas.<hr></div>
+                        <div class="work-desc">Coding Ninjas was founded in 2016 to bridge the knowledge gap between colleges and industry. Founded by Ankush Singla, Kannu Mittal and Dhawal Parate. Coding Ninjas provides world-class learning platform for coding education. Coding Ninjas teaches 17+ Programming courses in Foundation and Advanced courses such as Machine Learning and Data Science.</div>
+                    </div>
+                </div>
+            </section>
+
+            <br>
+
+            <section class="projects non-active" id="projects-section">
+                <br>
+                <div class="subheading"><center>Projects</center></div>
+                    <div id="project-slide">
+
+                        <div id="leftbutton" style="text-align:center;">
+                            <button class="next-button" onclick="image_prev()"><</button>&nbsp;&nbsp;&nbsp;&nbsp;
+                        </div>
+
+                        <div id="project-about" style="text-indent: 0px;">
+                            <p style="font-size:2vw;font-weight:bold;" id="project-title">Personal Portfolio</>
+                            <p id="project-desc" style="font-size:1.4vw;">This is my personal portfolio site. It is a simple website that showcases information about me like my education, skill-sets, social media links, work experience and contact information.</p>
+                                <a id="project-URL" style="font-size:20px;" target="_blank" href="https://ruthvikruth.github.io/RuthvikPortfolio.github.io/">Open in new tab<img width ="4%" style="filter:brightness(1000px);" src="Open Link.png"></a>
+                                <br>
+                                <button onclick='PortfolioLink()' class="projectsCSS">Copy URL</button>
+                            &ensp;&ensp;
+                            <span id="link-copy" style="color:green;font-size:2vw;">&ensp;</span>
+                            <br>
+                            <br>
+                        </div>
+
+                        <div id="rightbutton" style="text-align:center;">
+                            <button class="next-button" onclick="image_next()">></button>
+                        </div>
+                    </div>
+            </section>
+
+            <br><br><br>
+
+            <footer id="foot-href" style="background-color:#c4e2eaee;color:#14213d;text-align:center;">
+                <div>
+                    <span style="font-size:1.6vw;">&emsp;Contact me<br>City</span>
+                    <span style="font-size:1.6vw;font-weight:bold;">: Chennai - 600037</span>
+                    <br>
+
+                    <span style="font-size:1.8vw;">Email</span>
+                    <span style="font-size:1.6vw;font-weight:bold;">: ruthviksurya2002@gmail.com</span>
+                    <br><br>
+
+                    &emsp;<a href="https://leetcode.com/201401039/"><img width="2.8%" src="Leetcode.png"></a>&ensp;&emsp;
+                    <a target="_blank" href="https://www.linkedin.com/in/ruthvik-s-5a9ba120b/"><img width="3%" src="Linkedin.png"></a>&ensp;&emsp;
+                    <a target="_blank" href="https://www.hackerrank.com/RuthvikCodeFan"><img width="3%"src="Hackerrank.png"></a>&ensp;&emsp;
+                    <a target="_blank" href="https://github.com/Ruthvikruth"><img width="3%" src="Github.png"></a>&ensp;&emsp;<br><br>
+                </div>
+            </footer>
+            <br>
+            <center style="background-color:#111;color:white;font-size:1.2vw;position:fixed;bottom:0px;left:0px;right:0px;">COPYRIGHT &#169; 2023 RUTHVIK S. ALL RIGHTS RESERVED.</center>
+        </div>
+    </body>
+</html>
