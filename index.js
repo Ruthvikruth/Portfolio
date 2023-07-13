@@ -7,7 +7,7 @@ var greet2 = "A person can't learn anything, if the curiosity doesn't sparkle in
 let counter = 0;
 
 let title = ["Personal Portfolio","Predict the Numeral","Simple Calculator","NARAG"];
-let links = ["https://ruthvikruth.github.io/RuthvikPortfolio.github.io/","https://ruthvikruth.github.io/PredictTheNumeral.github.io/","https://ruthvikruth.github.io/Simple-Calculator/","Yet to Upload"];
+let links = ["https://ruthvik-portfolio.vercel.app/","https://ruthvikruth.github.io/PredictTheNumeral.github.io/","https://ruthvikruth.github.io/Simple-Calculator/","Yet to Upload"];
 let description = ["This is my personal portfolio site. It is a simple website that showcases information about me like my education, skill-sets, social media links, work experience and contact information.",'A number guessing game that involves the computer randomly generating a number within a certain range and the player will try to guess the number through the question and hints.','A basic software that performs simple arithmetic calculations such as addition, subtraction, multiplication, and division. Can be used for quick calculations and can be in everyday life.',"NARAG - Number Analysis, Report and Audit Generator. A java project that provides an analysis of a number. It also keeps track of the analysis of a number and stores it in a file."];
 
 function image_next()
